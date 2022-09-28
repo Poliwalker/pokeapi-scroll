@@ -1,0 +1,139 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+	color: rgb(236, 236, 188);
+	width: 100%;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.pokemon-logo {
+	width: 50%;
+	margin: 2rem 3rem 5rem;
+}
+
+.poke__container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 50px;
+}
+
+.poke {
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.poke img {
+	width: 300px;
+	z-index: 10;
+}
+
+.pokeballs-container {
+	width: 300px;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	visibility: hidden;
+	margin-top: 50px;
+}
+
+.pokeballs-container img {
+	width: 100px;
+	-webkit-animation: vibrate-1 0.3s linear infinite both,
+		colorizer 0.3s linear both;
+	animation: vibrate-1 0.3s linear infinite both;
+}
+.show {
+	visibility: visible;
+}
+
+@-webkit-keyframes vibrate-1 {
+	0% {
+		-webkit-transform: translate(0);
+		transform: translate(0);
+	}
+	20% {
+		-webkit-transform: translate(-2px, 2px);
+		transform: translate(-2px, 2px);
+	}
+	40% {
+		-webkit-transform: translate(-2px, -2px);
+		transform: translate(-2px, -2px);
+	}
+	60% {
+		-webkit-transform: translate(2px, 2px);
+		transform: translate(2px, 2px);
+	}
+	80% {
+		-webkit-transform: translate(2px, -2px);
+		transform: translate(2px, -2px);
+	}
+	100% {
+		-webkit-transform: translate(0);
+		transform: translate(0);
+	}
+}
+@keyframes vibrate-1 {
+	0% {
+		-webkit-transform: translate(0);
+		transform: translate(0);
+	}
+	20% {
+		-webkit-transform: translate(-2px, 2px);
+		transform: translate(-2px, 2px);
+	}
+	40% {
+		-webkit-transform: translate(-2px, -2px);
+		transform: translate(-2px, -2px);
+	}
+	60% {
+		-webkit-transform: translate(2px, 2px);
+		transform: translate(2px, 2px);
+	}
+	80% {
+		-webkit-transform: translate(2px, -2px);
+		transform: translate(2px, -2px);
+	}
+	100% {
+		-webkit-transform: translate(0);
+		transform: translate(0);
+	}
+}
+
+.id-poke {
+	position: absolute;
+	top: 12rem;
+	font-size: 10rem;
+	color: #363636;
+	font-weight: 800;
+	z-index: 1;
+}
+
+.poke {
+	position: relative;
+}
+
+.poke h2 {
+	z-index: 10;
+}
+
+.heigth,
+.weight,
+.tipo-poke,
+.exp {
+	z-index: 10;
+}
